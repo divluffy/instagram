@@ -1,0 +1,232 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body{
+width: 100%;
+height: 100vh;
+}
+
+section{
+width: 800px;
+height: 100vh;
+display: flex;
+margin: 0 auto;
+position: relative;
+}
+
+/* left side */
+.left-side{
+background: url("../Assets/image/backgroundindex.png") no-repeat center;
+position: relative;
+width: 50%;
+height: 100vh;
+}
+
+.left-side img{
+position: absolute;
+top:103px;
+left:  124px;
+width: 240px;
+}
+
+/* right side */
+.right-side{
+width:300px;
+background-color: rgb(255, 255, 255);
+position: absolute;
+right: 40px;
+top: 30px;
+}
+
+.right-side .content{
+display: block;
+text-align: center;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+.content .pop-login{
+margin-top: 20px;
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+border-radius: 3px;
+}
+
+.pop-login .title{
+padding: 10px;
+font-weight: 600;
+font-size: x-large;
+}
+
+.pop-login .form{
+align-items: center;
+display: grid;
+text-align: center;
+width: 100%;
+position: relative;
+}
+
+.form .input input{
+outline: none;
+border-radius: 3px;
+width: 280px;
+padding: 13px 7px;
+margin-top: 15px;
+border: 1px solid rgb(122, 118, 118);
+color: rgb(85, 84, 82);
+}
+
+.form .input label{
+position: absolute;
+pointer-events: none;
+color: rgb(61, 60, 59);
+} 
+
+.input-user label{
+top:20%;
+left: 19px;
+font-size: 14px;
+}
+
+.input-pass label{
+top: 55%;
+font-size: 14px;
+left: 19px;
+}  
+
+.input-user .labeluser.on{
+top: 6%;
+background: white;
+color: #000;
+font-size: 12px;
+left: 15px;
+padding-left: 3px;
+}
+
+.input-pass .labelpass.on{
+top: 44%;
+font-size: 13px;
+background: white;
+color: #000;
+left: 15px;
+padding-left: 3px;
+} 
+
+.input-pass .show-pass{
+position: absolute;
+top: 70%;
+transform: translateY(-100%);
+right: 20px;
+cursor: pointer;
+display: none;
+}
+
+.show-pass.active{
+display: inline;
+}
+
+.show-pass .hide{
+display: inline;
+}  
+
+.show-pass .show{
+display: none;
+}   
+
+.show-pass.on .hide{
+display: none;
+}
+
+.show-pass.on .show{
+display: inline;
+}
+
+.form .btn-submit button{
+margin-top: 15px;
+border: none;
+outline: none;
+border-radius: 6px;
+width: 280px;
+padding: 8px;
+background-color: rgb(53,121,234);
+color: #fff;
+cursor: pointer;
+}
+
+.pop-login .cut{
+margin-top:45px;
+height: 20px;
+width: 100%;
+position: relative;
+}
+
+.cut .or{
+position: absolute;
+top: -15px;
+left: 50%;
+transform: translateX(-50%);
+background-color: rgb(255, 255, 255);
+padding: 7px 5px;
+border-radius: 50%;
+color: rgb(151, 146, 136);
+}
+
+.pop-login .other .by-fb a{
+margin-top: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.by-fb .ach{
+text-decoration: none;
+color: rgb(0, 132, 255) ;
+}
+
+.pop-login .other img{
+width: 30px;
+}
+
+.pop-login .forgot{
+margin-top: 10px;
+padding: 10px;
+}
+
+.forgot .ach{
+text-decoration: none;
+color: rgb(0, 132, 255) ;
+}
+
+.content .pop-signup{
+margin-top: 20px;
+padding: 20px;
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+border-radius: 3px;
+font-size: 14px;
+}
+
+.pop-signup .ach{
+text-decoration: none;
+color: rgb(0, 132, 255) ;
+}
+
+.content .app-phone{
+margin-top: 20px;
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+border-radius: 3px;
+font-size: 14px;
+padding: 5px;
+}
+
+.app-phone .stores{
+margin-top: 5px;
+}
+
+.stores img{
+width: 140px;
+cursor: pointer;
+}

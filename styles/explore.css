@@ -1,0 +1,74 @@
+.explore{
+width: 100%;
+position: relative;
+top: 50px;
+width: 70%;
+margin: 0 auto;
+}
+
+.explore .explore-content{
+padding: 5px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+
+.explore-content .cell-explore{
+cursor: pointer;
+height: 250px;
+margin: 5px;
+position: relative;
+}
+
+.cell-explore .background-post{
+width: 100%;
+height: 100%;
+}
+
+.cell-explore .background-post img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.cell-explore .reacts{
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6);
+align-items: center;
+justify-content: center;
+color: #fff;
+display: none;
+}
+
+.cell-explore:hover .reacts{
+display: flex;
+}
+
+.reacts .react-loved{
+display: flex;
+align-items: center;
+}
+
+.reacts .react-comments{
+margin-left: 20px;
+align-items: center;
+display: flex;
+}
+
+.react-comments .svg svg{
+fill: #fff;
+}
+
+.reacts .react-comments span,
+.reacts .react-loved span{
+margin-left: 5px;
+}
+
+.cell-explore:hover{
+box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+}

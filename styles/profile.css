@@ -1,0 +1,180 @@
+.profile-content{
+position: absolute;
+width: 70%;
+top: 50px;
+left: 50%;
+transform: translatex(-50%);
+height: 1000px;
+}
+
+.profile-content .content-aboutme{
+width: 100%;
+height: 1000px;
+}
+
+.content-aboutme .head-profile{
+width: 100%;
+height: 280px;
+display: flex;
+border-bottom: 2px solid rgb(212, 210, 206);
+}
+
+.head-profile .img{
+padding: 20px;
+width: 200px;
+height:200px;
+position: relative;
+cursor: pointer;
+left: 40px;
+top: 15px;
+}
+
+.head-profile .img img{
+width:100%;
+height: 100%;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.head-profile .profile-info{
+width: 50%;
+height: 100%;
+position: relative;
+left: 90px;
+}
+
+.profile-info .colu{
+position: relative;
+top: 15px;
+display: flex;
+width: 100%;
+margin-top: 15px;
+justify-content: space-between;
+}
+
+.profile-info .colu-1{
+padding: 10px;
+width: 55%;
+}
+
+.colu-1 .username{
+font-size: 25px;
+}
+
+.colu-1 .edit-profile-btn button{
+padding: 6px 10px;
+outline:none;
+background: none;
+border-radius: 3px;
+border: 1px solid rgb(199, 195, 195);
+cursor: pointer;
+}
+
+.colu-1 .options{
+cursor: pointer;
+}
+
+.profile-info .colu-2{
+padding: 5px;
+width: 70%;
+font-size: 14px;
+color: rgb(95, 97, 97);
+font-weight: 600;
+letter-spacing: 0.4px;
+}
+
+.colu-2 .followers-all{
+cursor: pointer;
+user-select: none;
+}
+
+.colu-2 .following-all{
+cursor: pointer;
+user-select: none;
+}
+
+.colu-3 {
+height: 135px;
+}
+
+.colu-3  .description{
+padding: 10px;
+width: 100%;
+border: none;
+resize: none;
+outline: none;
+height: 100%;
+overflow: hidden;
+}
+
+/*  */
+.content-aboutme .posts-profile{
+height: 100%;
+}
+
+.posts-profile .cells-posts{
+display: grid;
+padding: 10px;
+position: relative;
+grid-template-columns: repeat(3,1fr);
+}
+
+.cells-posts .cell{
+cursor: pointer;
+height: 250px;
+margin: 5px;
+position: relative;
+}
+
+.cell .background-post{
+width: 100%;
+height: 100%;
+}
+
+.cell .background-post img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.cell .reacts{
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6);
+align-items: center;
+justify-content: center;
+color: #fff;
+display: none;
+}
+
+.cell:hover .reacts{
+display: flex;
+}
+
+.reacts .react-loved{
+display: flex;
+align-items: center;
+}
+
+.reacts .react-comments{
+margin-left: 20px;
+align-items: center;
+display: flex;
+}
+.react-comments .svg svg{
+fill: #fff;
+}
+
+.reacts .react-comments span,
+.reacts .react-loved span{
+margin-left: 5px;
+}
+
+.cell:hover{
+box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+}

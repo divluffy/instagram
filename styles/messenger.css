@@ -1,0 +1,13 @@
+
+.messenger-container{
+position: relative;
+background: turquoise;
+width: 70%;
+height: 549px;
+margin:  0 auto;
+top: 65px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 50px;
+}
