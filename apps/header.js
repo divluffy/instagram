@@ -639,7 +639,7 @@ exploreContent.innerHTML += `
 // log out
 let logOut = document.querySelector('.log-out')
 logOut.addEventListener('click', ()=>{
-    location.assign('/index.html')
+    location.assign('/instagram/index.html')
 })
 
 
